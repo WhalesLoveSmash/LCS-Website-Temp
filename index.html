@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>LCS Bets</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="wrap">
+    <!-- Header (badge/subline removed) -->
+    <header>
+      <div class="brand">Liquidity Crisis Sports</div>
+    </header>
+
+    <!-- Win/Lose ribbon (kept) -->
+    <div class="ribbon" id="ribbon" aria-live="polite">
+      <div class="chip chip-win">✅ Wins: <span id="winCount">0</span></div>
+      <div class="chip chip-lose">❌ Losses: <span id="loseCount">0</span></div>
+      <div class="chip chip-total">Total: <span id="totalCount">0</span></div>
+      <span class="muted small" id="ts"></span>
+    </div>
+
+    <!-- Bets list -->
+    <div id="grid" class="grid" aria-live="polite"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
